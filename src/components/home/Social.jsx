@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Social = () => {
   return (
     <div className='home__social'>
@@ -10,7 +8,7 @@ const Social = () => {
             <i className="uil uil-github"></i>
         </a>
         <a href="https://www.instagram.com/ig_jagnyadatta/" className="home__social-icon" target='blank'>
-            <i className="uil uil-instagram"></i>
+            <i className="uil uil-instagram-alt"></i>
         </a>
         <a href="https://www.facebook.com/jagnyadatta.dalai.5/" className="home__social-icon" target='blank'>
             <i className="uil uil-facebook"></i>
