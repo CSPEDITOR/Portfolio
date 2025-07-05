@@ -1,39 +1,45 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import Work1 from "../../assets/work1.png";
+import Work2 from "../../assets/work2.png";
+import Work3 from "../../assets/work3.png";
+import Work4 from "../../assets/work4.png";
+// import Work5 from "../../assets/work5.jpg";
 
 export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Web design",
+    title: "EleveteU",
+    description: "A FullStack MERN Application.",
+    gitLink: "https://github.com/jagnyadatta/ElevateU",
+    preview: "https://elevateu-three.vercel.app/",
     category: "web",
   },
   {
     id: 2,
     image: Work2,
-    title: "App movil",
-    category: "app",
+    title: "FindJob",
+    description: "A MERN Application for job seekers.",
+    gitLink: "https://github.com/jagnyadatta/Find-Jobs",
+    preview: "https://find-jobs-bv56.onrender.com/",
+    category: "web",
   },
   {
     id: 3,
     image: Work3,
-    title: "Brand design",
-    category: "design",
+    title: "Portfolio",
+    description: "My PortFolio using React.js",
+    gitLink: "https://github.com/jagnyadatta/Portfolio",
+    preview: "https://jagnyadattadalai.netlify.app/",
+    category: "portfolio",
   },
   {
     id: 4,
     image: Work4,
-    title: "App movil",
-    category: "app",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "Web design",
-    category: "web",
+    title: "Portfolio - 2",
+    description: "Second Portfolio Using Html,Css,JavaScript",
+    gitLink: "https://github.com/jagnyadatta/My_Portfolio",
+    preview: "https://hellojagnyadatta.netlify.app/",
+    category: "portfolio",
   },
 ];
 
@@ -45,7 +51,7 @@ export const projectsNavs =[
     name: "web",
   },
   {
-    name: "app",
+    name: "portfolio",
   },
   {
     name: "design",

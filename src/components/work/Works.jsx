@@ -44,6 +44,11 @@ const Works = () => {
                     return <WorksItems item={item} key={item.id}/>
                 })
             }
+            {
+                projects.length === 0 && (
+                    <p>No design made by me.</p>
+                )
+            }
         </div>
     </>
   )
