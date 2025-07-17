@@ -37,7 +37,7 @@ const Contact = () => {
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
-                jagnyadattadalai99215@gmail.com
+                chandrashekharaprasad@gmail.com
               </span>
 
               <a
@@ -54,10 +54,10 @@ const Contact = () => {
               <i className="bx bxl-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">+91-7606976736</span>
+              <span className="contact__card-data">+91 6372606392</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=7606976736&text=Hello, more information!"
+                href="https://api.whatsapp.com/send?phone=6372606392&text=Hello, more information!"
                 target="blank"
                 className="contact__button"
               >
@@ -67,13 +67,13 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-telegram contact__card-icon"></i>
+              <i className="bx bxl-instagram contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Telegram</h3>
-              <span className="contact__card-data">@jagnyadatta</span>
+              <h3 className="contact__card-title">Instagran</h3>
+              <span className="contact__card-data">@csp_editor</span>
 
               <a
-                href="https://t.me/jagnyadatta"
+                href="https://instagram.com/csp_editor"
                 target="blank"
                 className="contact__button"
               >

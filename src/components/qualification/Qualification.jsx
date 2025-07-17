@@ -13,7 +13,7 @@ const Qualification = () => {
 
         <div className="qualification__container container">
             <div className="qualification__tabs">
-                <div onClick={()=>toggleTab(1)} className={toggleState === 1 ? "qualification__button qualification__active button--flex": "qualification__button button--flex"}>
+                <div onClick={()=>toggleTab(1)} className={toggleState === 1 ? "qualification__button qualification__active button--flex ": "qualification__button button--flex"}>
                     <i className="uil uil-graduation-cap qualification__icon"></i>
                     Education
                 </div>
@@ -48,11 +48,11 @@ const Qualification = () => {
                         </div>
 
                         <div>
-                            <h3 className="qualification__title">B.Sc. Mathematics</h3>
-                            <span className="qualification__subtitle">Berhampur University</span>
+                            <h3 className="qualification__title">B.Sc. Computer Science</h3>
+                            <span className="qualification__subtitle">Banki Autonomus College</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2023    
+                                2020 - 2023    
                             </div>
                         </div>
                     </div>
@@ -61,10 +61,10 @@ const Qualification = () => {
                     <div className="qualification__data">
                         <div>
                             <h3 className="qualification__title">+2</h3>
-                            <span className="qualification__subtitle">Kandakhai Arts&Sci College</span>
+                            <span className="qualification__subtitle">Prananath College (Autonomous)</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2016 - 2018
+                                2018 - 2020
                             </div>
                         </div>
                         <div>
@@ -82,10 +82,10 @@ const Qualification = () => {
 
                         <div>
                             <h3 className="qualification__title">10th</h3>
-                            <span className="qualification__subtitle">Dr. M.M.M High School</span>
+                            <span className="qualification__subtitle">Saraswati Shishu Vidya Mandir</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2016    
+                                2018    
                             </div>
                         </div>
                     </div>
@@ -106,39 +106,6 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-
-                    {/* <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 className="qualification__title">B.Sc. Mathematics</h3>
-                            <span className="qualification__subtitle">Berhampur University</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2023    
-                            </div>
-                        </div>
-                    </div> */}
-
-
-                    {/* <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">MCA</h3>
-                            <span className="qualification__subtitle">IGIT, Saranga</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2023 - 2025
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>

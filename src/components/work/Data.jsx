@@ -1,7 +1,8 @@
-import Work1 from "../../assets/work1.png";
-import Work2 from "../../assets/work2.png";
-import Work3 from "../../assets/work3.png";
-import Work4 from "../../assets/work4.png";
+import Work1 from "../../assets/ElevateU.png";
+import Work2 from "../../assets/food_delivery.png";
+// import Work2 from "../../assets/work2.png";
+import Work3 from "../../assets/carehub.png";
+import Work4 from "../../assets/portfolio.png";
 // import Work5 from "../../assets/work5.jpg";
 
 export const projectsData = [
@@ -9,7 +10,7 @@ export const projectsData = [
     id: 1,
     image: Work1,
     title: "EleveteU",
-    description: "A FullStack MERN Application.",
+    description: "A FullStack MERN Application.\n Contributed as a frontend collaborator",
     gitLink: "https://github.com/jagnyadatta/ElevateU",
     preview: "https://elevateu-three.vercel.app/",
     category: "web",
@@ -17,28 +18,28 @@ export const projectsData = [
   {
     id: 2,
     image: Work2,
-    title: "FindJob",
-    description: "A MERN Application for job seekers.",
-    gitLink: "https://github.com/jagnyadatta/Find-Jobs",
-    preview: "https://find-jobs-bv56.onrender.com/",
+    title: "Food Delivery ",
+    description: "Built using the PHP + MySQL backend \n with a frontend developed using HTML, CSS.",
+    gitLink: "https://github.com/CSPEDITOR/food_delivery_website",
+    preview: "",
     category: "web",
   },
   {
     id: 3,
     image: Work3,
-    title: "Portfolio",
-    description: "My PortFolio using React.js",
-    gitLink: "https://github.com/jagnyadatta/Portfolio",
-    preview: "https://jagnyadattadalai.netlify.app/",
-    category: "portfolio",
+    title: "CareHub",
+    description: "A FullStack MERN Application.\n In Development",
+    gitLink: "https://github.com/CSPEDITOR/CareHub",
+    preview: "",
+    category: "web",
   },
   {
     id: 4,
     image: Work4,
-    title: "Portfolio - 2",
-    description: "Second Portfolio Using Html,Css,JavaScript",
-    gitLink: "https://github.com/jagnyadatta/My_Portfolio",
-    preview: "https://hellojagnyadatta.netlify.app/",
+    title: "Portfolio",
+    description: "Portfolio Using React",
+    gitLink: "https://github.com/CSPEDITOR/Portfolio",
+    preview: "https://chandrashekharaprasad.netlify.app/",
     category: "portfolio",
   },
 ];

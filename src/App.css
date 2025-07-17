@@ -84,7 +84,14 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  /* background: linear-gradient(to bottom right, #030712, #111827); */
+  /* background: linear-gradient(to bottom right,#030712,#111827,#000000); */
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #030712, #111827, #000000);
+  background-attachment: fixed;
+  background-size: cover;
+
   color: var(--text-color);
 }
 
@@ -121,7 +128,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: rebeccapurple;
 }
 
 .section__subtitle {
@@ -150,19 +157,27 @@ img {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
+  background-color: rebeccapurple;
+  color: white;
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: background-color, color 0.5s ease;
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: white;
+  color: rebeccapurple;
 }
 
 .button__icon {
   margin-left: var(--mb-0-5);
+}
+.button__icon path {
+  transition: fill 0.5s ease;
+}
+.button:hover .button__icon path {
+  fill: rebeccapurple;
 }
 
 .button--flex {
