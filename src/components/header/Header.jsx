@@ -27,7 +27,7 @@ const Header = () => {
               { id: "#about", label: "About", icon: "uil-user" },
               { id: "#skills", label: "Skills", icon: "uil-file-alt" },
               { id: "#services", label: "Services", icon: "uil-briefcase-alt" },
-              { id: "#portfolio", label: "Portfolio", icon: "uil-scenery" },
+              { id: "#portfolio", label: "Project", icon: "uil-scenery" },
               { id: "#contact", label: "Contact", icon: "uil-message" },
             ].map((item) => (
               <li className="nav__item" key={item.id}>
