@@ -219,6 +219,9 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  html,body{
+    background: rgb(7, 10, 19);
+  }
 }
 
 /* For small devices */

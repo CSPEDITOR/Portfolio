@@ -1,59 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import './header.css';
+import "./header.css";
 
 const Header = () => {
   const [toggle, showMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState('#home');
+  const [activeNav, setActiveNav] = useState("#home");
+  const [scrollNav, setScrollNav] = useState(false);
 
-  // ============= Change Background Header on Scroll =============
   useEffect(() => {
-  const handleScroll = () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY >= 50) {
-      header.classList.add('scroll-header');
-    } else {
-      header.classList.remove('scroll-header');
-    }
-  };
+    const handleScroll = () => {
+      setScrollNav(window.scrollY >= 100);
+    };
 
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
-
-
-   
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className='header'>
+    <header className={`header ${scrollNav ? "scroll-header" : ""}`}>
       <nav className='nav container'>
-        <a href='#home' className='nav__logo'>Chandra Shekhara</a>
+        <a href="index.html" className="nav__logo">Chandra Shekhar</a>
 
-        <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>
-          <ul className='nav__list grid'>
+        <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
+          <ul className="nav__list grid">
             {[
-              { href: '#home', icon: 'uil-estate', label: 'Home' },
-              { href: '#about', icon: 'uil-user', label: 'About' },
-              { href: '#skills', icon: 'uil-file-alt', label: 'Skills' },
-              { href: '#services', icon: 'uil-briefcase-alt', label: 'Services' },
-              { href: '#portfolio', icon: 'uil-scenery', label: 'Projects' },
-              { href: '#contact', icon: 'uil-message', label: 'Contact' },
-            ].map(({ href, icon, label }) => (
-              <li className='nav__item' key={href}>
+              { id: "#home", label: "Home", icon: "uil-estate" },
+              { id: "#about", label: "About", icon: "uil-user" },
+              { id: "#skills", label: "Skills", icon: "uil-file-alt" },
+              { id: "#services", label: "Services", icon: "uil-briefcase-alt" },
+              { id: "#portfolio", label: "Portfolio", icon: "uil-scenery" },
+              { id: "#contact", label: "Contact", icon: "uil-message" },
+            ].map((item) => (
+              <li className="nav__item" key={item.id}>
                 <a
-                  href={href}
-                  onClick={() => setActiveNav(href)}
-                  className={activeNav === href ? 'nav__link active-link' : 'nav__link'}
+                  href={item.id}
+                  onClick={() => setActiveNav(item.id)}
+                  className={`nav__link ${activeNav === item.id ? "active-link" : ""}`}
                 >
-                  <i className={`uil ${icon} nav__icon`}></i> {label}
+                  <i className={`uil ${item.icon} nav__icon`}></i> {item.label}
                 </a>
               </li>
             ))}
           </ul>
-          <i className='uil uil-times nav__close' onClick={() => showMenu(!toggle)}></i>
+          <i className="uil uil-times nav__close" onClick={() => showMenu(false)}></i>
         </div>
 
-        <div className='nav__toggle' onClick={() => showMenu(!toggle)}>
-          <i className='uil uil-apps'></i>
+        <div className="nav__toggle" onClick={() => showMenu(true)}>
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>
